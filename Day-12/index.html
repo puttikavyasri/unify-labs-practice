@@ -1,11 +1,71 @@
-<!-- 
-  DAY 12 PRACTICE LAB
-  Practice the concepts from today's video lecture below.
--->
-<div id="root">
-    <div class="lab-container">
-        <h1>Lab <span>Session</span> {{ selectedDay }}</h1>
-        <p>Console is active. Use the <strong>JS Tab</strong> to practice logic.</p>
-        <div id="display" class="debug-panel">Waiting for JS input...</div>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessible Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header>
+  <div class="container header-flex">
+    <h1>My Dashboard</h1>
+    <button aria-label="Open settings">Settings</button>
+  </div>
+</header>
+
+<div class="container dashboard-grid">
+
+  <nav aria-label="Primary navigation">
+    <ul>
+      <li><a href="#" aria-current="page">Home</a></li>
+      <li><a href="#">Reports</a></li>
+      <li><a href="#">Analytics</a></li>
+      <li><a href="#">Profile</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+
+    <section aria-labelledby="overview">
+      <h2 id="overview">Overview</h2>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Users</h3>
+          <p>1,245 Active Users</p>
+        </article>
+
+        <article class="card">
+          <h3>Revenue</h3>
+          <p>₹3,45,000</p>
+        </article>
+
+        <article class="card">
+          <h3>Performance</h3>
+          <p>98% Uptime</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="actions">
+      <h2 id="actions">Quick Actions</h2>
+      <div class="actions">
+        <button>Add User</button>
+        <button>Generate Report</button>
+      </div>
+    </section>
+
+  </main>
+
 </div>
+
+<footer>
+  © 2026 Accessible Dashboard
+</footer>
+
+</body>
+</html>
