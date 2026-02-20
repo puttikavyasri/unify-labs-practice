@@ -1,0 +1,23 @@
+body {
+    font-family: Arial;
+    background: #eef;
+    text-align: center;
+}
+
+.container {
+    margin-top: 60px;
+}
+
+input, select {
+    padding: 8px;
+    margin: 5px;
+}
+
+button {
+    padding: 8px 14px;
+    margin: 5px;
+}
+
+.hide {
+    display: none;
+}

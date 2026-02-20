@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual Pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Virtual Pet</h1>
+
+    <input type="text" id="petName" placeholder="Pet Name">
+
+    <select id="petType">
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+        <option value="Rabbit">Rabbit</option>
+    </select>
+
+    <button onclick="createPet()">Create</button>
+
+    <div id="petArea" class="hide">
+        <h2 id="title"></h2>
+        <p id="status"></p>
+
+        <button onclick="feedPet()">Feed</button>
+        <button onclick="playPet()">Play</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
