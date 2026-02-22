@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dark Light Settings</title>
+    <meta charset="UTF-8">
+    <title>Dark Mode Fix</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light">
 
-    <h2>Theme Settings</h2>
+    <div class="container">
+        <h1>Dark / Light Mode</h1>
 
-    <button id="toggle">Toggle Theme</button>
+        <label class="toggle-container">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+        </label>
+
+        <p id="modeText">Light Mode</p>
+    </div>
 
     <script src="script.js"></script>
 </body>
