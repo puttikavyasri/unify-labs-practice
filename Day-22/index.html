@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Crypto Tracker</h2>
+
+    <input type="text" id="search" placeholder="Search coin">
+    <select id="sort">
+        <option value="name">Sort by Name</option>
+        <option value="price">Sort by Price</option>
+    </select>
+
+    <button id="themeToggle">Toggle Theme</button>
+
+    <div id="loader">Loading...</div>
+    <div id="error"></div>
+    <div id="coins"></div>
+
+    <script type="module" src="App.js"></script>
+</body>
+</html>
